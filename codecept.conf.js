@@ -1,9 +1,9 @@
 exports.config = {
-  tests: "./tests/*/*.js",
+  tests: "./tests/addToCart/*.js",
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'https://www.amazon.de'
+      url: 'https://www.bergfreunde.eu'
     }
   },
   multiple: {
@@ -19,6 +19,11 @@ exports.config = {
     popup: './pages/Popup.js',
     cartPage: './pages/CartPage.js'
   },
+  plugins: {
+   "screenshotOnFail": {
+     "enabled": true
+   }
+ },
   bootstrap: null,
   mocha: {},
   name: 'codeceptexample'

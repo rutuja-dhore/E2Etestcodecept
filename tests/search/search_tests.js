@@ -3,7 +3,7 @@ const assert = require('assert');
 Feature('Search functionality');
 
 Before(() => {
-    I.amOnPage('https://www.bergfreunde.eu/');
+    I.amOnPage('/');
 });
 
 Scenario('Search function is displayed', () => {
@@ -14,8 +14,6 @@ Scenario('Search returns results', async () => {
    I.click({id: 'search'});
     const searchString = 'LUNDHAGS';
     I.fillField('searchparam', searchString);
-    I.click('Enter');
-    I.wait(1);
     locate('div').withAttr({ 'data-codecept': 'numberOfProductsInProductlist' })
 });
 

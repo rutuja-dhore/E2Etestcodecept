@@ -2,7 +2,7 @@ const I = actor();
 
 module.exports = {
     resultBar: '#product-list',
-    productName: '#li',
+    productName: 'img',
     noResult: 'h1[id="noResultsTitle"]',
 
     async hasResults(searchString) {
@@ -11,15 +11,7 @@ module.exports = {
     },
 
     showProductDetails : function() {
-      I.checkOption('Gender','Men')
-      // I.selectOption('ul.size.li','xs');
-      I.selectOption('Size','XS');
-
-      // I.checkOption('#Men','.search_value');
-      // I.checkOption('men','.search_value');
-      // I.checkOption('men');
-
         I.click(this.productName);
-        I.wait(2);
+        I.amOnPage('/brands/lundhags/');
     }
 }

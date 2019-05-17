@@ -1,3 +1,3 @@
 module.exports.cartPage = {
-    confirmText: 'span[id="confirm-text"]'
+    confirmText: 'table[class="popup-basket-summary"]'
 }

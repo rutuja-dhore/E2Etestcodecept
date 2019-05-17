@@ -1,4 +1,4 @@
 module.exports.navTools = {
-    cartCount: 'span[id="nav-cart-count"]',
+    cartCount: '//*[@id="usr-nav"]/li[5]/div',
 
 }
